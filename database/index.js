@@ -1,14 +1,14 @@
 const { Sequelize } = require("sequelize");
 
 const connection = new Sequelize(
-  process.env.DB_NAME,
-  process.env.DB_USER,
-  process.env.DB_PASS,
+  "deploy",
+  "reboot",
+  "reboot",
 
   {
-    host: process.env.DB_HOST,
-    dialect: process.env.DB_DIALECT,
-    port: process.env.DE_PORT
+    host: "localhots",
+    dialect: "mysql",
+    port: 3006
   }
 )
 

@@ -13,7 +13,7 @@ const fullConnection = async () => {
   try {
     await checkConnection();
     addRelationshipsModells();
-    await checkSyncModels("force");
+    await checkSyncModels();
   } catch (error) {
     console.log("error");
     throw new Error(error);

@@ -39,10 +39,9 @@ const initializeExpress = () => {
 const startAPI = async () => {
   try {
     await fullConnection();
-    console.log("aqui voy");
-    initializeExpress();
+    initializeExpress()
   } catch (error) {
-    console.log("error to start the API");
+    console.log("error to start the API")
     throw new Error(error);
   }
 };

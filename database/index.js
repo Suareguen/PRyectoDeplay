@@ -6,7 +6,7 @@ const connection = new Sequelize(
   "reboot",
 
   {
-    host: "localhots",
+    host: "localhost",
     dialect: "mysql",
     port: 3006
   }

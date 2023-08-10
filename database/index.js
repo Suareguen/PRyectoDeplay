@@ -8,7 +8,6 @@ const connection = new Sequelize(
   {
     host: "localhost",
     dialect: "mysql",
-    port: 3006
   }
 )
 
